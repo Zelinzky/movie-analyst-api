@@ -1,4 +1,4 @@
-FROM node:10
+FROM node:lts
 
 WORKDIR /usr/src/api
 
@@ -8,4 +8,4 @@ RUN npm ci
 
 EXPOSE 3000
 
-ENTRYPOINT["node", "server.js"]
+ENTRYPOINT node server.js
