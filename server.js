@@ -1,6 +1,8 @@
 // Get our dependencies
 let express = require('express');
 let app = express();
+
+
 //var mysql = require("mysql");
 //var connection = mysql.createConnection({
 //  host     : process.env.DB_HOST || 'mysql-test.cxrpknmq0hfi.us-west-2.rds.amazonaws.com',
@@ -167,11 +169,9 @@ app.get('/pending', function (req, res) {
 });
 
 if (process.env.PORT === undefined) {
-    console.log("environment variable PORT not defined, listening on default port 3000");
     app.listen(3000);
+    console.log("environment variable PORT not defined, listening on default port 3000");
 } else {
-    console.log("server listening through port: " + process.env.PORT);
     app.listen(process.env.PORT);
+    console.log("server listening through port: " + process.env.PORT);
 }
-//app.listen(8081);
-module.exports = app;
