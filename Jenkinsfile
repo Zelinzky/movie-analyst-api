@@ -7,5 +7,6 @@ nodeJSApp {
     tag = "test"
     registryCredentials ='ecr:us-east-1:AWSCRED'
     artifactoryRepo = 'movie-analyst'
-    org = 'psl'
+    org = 'zelinzky'
+    sonarProjectKey = 'Zelinzky_movie-analyst-api'
 }
